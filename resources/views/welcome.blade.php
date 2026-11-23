@@ -65,16 +65,17 @@
             <div class="flex items-center justify-between gap-4">
                 
                 <!-- Brand / Logo Pill -->
-                <a href="{{ url('/') }}" class="flex items-center gap-2.5 group focus:outline-none">
-                    <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-slate-100 border border-slate-200 p-1 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
-                        <img src="{{ asset('images/logo.png') }}" alt="Logo Polbeng" class="w-full h-full object-contain">
+                <a href="{{ url('/') }}" class="flex items-center gap-3 group focus:outline-none">
+                    <div class="h-8 sm:h-10 flex items-center shrink-0">
+                        <img src="{{ asset('images/polbeng-header.png') }}" alt="Logo Politeknik Negeri Bengkalis" class="h-7 sm:h-9 w-auto object-contain">
                     </div>
+                    <div class="h-5 w-px bg-slate-200 hidden sm:block"></div>
                     <div class="flex items-center gap-1.5">
-                        <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-brandlime-400 text-slate-900 text-xs font-black">
+                        <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-brandlime-400 text-slate-900 text-[10px] font-black">
                             ✓
                         </span>
-                        <span class="font-extrabold text-sm sm:text-base text-slate-900 tracking-tight">
-                            Polbeng Food Area
+                        <span class="font-extrabold text-xs sm:text-sm text-slate-900 tracking-tight">
+                            Food Area
                         </span>
                     </div>
                 </a>
@@ -128,12 +129,11 @@
                     <!-- Left Column: Headline & Action Pill -->
                     <div class="lg:col-span-6 space-y-6">
                         
-                        <div class="flex items-center gap-2 text-xs font-mono font-semibold text-slate-400">
-                            <span>#kantin-polbeng</span>
-                            <span>•</span>
-                            <span>#nfc-payment</span>
-                            <span>•</span>
-                            <span>#pos-kasir</span>
+                        <!-- Official Campus Spotlight Chip -->
+                        <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-slate-50 border border-slate-200 shadow-2xs">
+                            <img src="{{ asset('images/polbeng-header.png') }}" alt="Politeknik Negeri Bengkalis" class="h-4 sm:h-5 w-auto object-contain">
+                            <span class="w-px h-3.5 bg-slate-300"></span>
+                            <span class="text-[11px] font-extrabold text-slate-800">Unit Usaha Inkubator Kampus</span>
                         </div>
 
                         <h1 class="text-3xl sm:text-5xl lg:text-[54px] font-black text-slate-900 tracking-tight leading-[1.08]">
@@ -218,6 +218,47 @@
                             <span class="text-[11px] font-extrabold text-slate-800">Terminal Aktif</span>
                         </div>
 
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ================= CAMPUS INSTITUTIONAL SPOTLIGHT SECTION ================= -->
+            <section class="border-y border-slate-100 bg-slate-50/80 px-5 sm:px-8 lg:px-12 py-7 sm:py-8">
+                <div class="flex flex-col lg:flex-row items-center justify-between gap-6 sm:gap-8">
+                    
+                    <div class="flex flex-col sm:flex-row items-center gap-5 text-center sm:text-left">
+                        <!-- High-Res Polbeng Header Logo Spotlight Card -->
+                        <div class="p-3 bg-white rounded-2xl border border-slate-200/90 shadow-sm flex items-center justify-center shrink-0 hover:shadow-md transition">
+                            <img src="{{ asset('images/polbeng-header.png') }}" alt="Logo Resmi Politeknik Negeri Bengkalis" class="h-10 sm:h-12 lg:h-14 w-auto object-contain max-w-[240px] sm:max-w-[280px]">
+                        </div>
+
+                        <div class="space-y-1">
+                            <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2">
+                                <span class="px-2.5 py-0.5 rounded-full bg-brandblue-50 text-brandblue-700 font-extrabold text-[10px] uppercase tracking-wider border border-brandblue-100">
+                                    Ekosistem Resmi Kampus
+                                </span>
+                                <span class="text-xs text-slate-400 hidden sm:inline">•</span>
+                                <span class="text-xs font-bold text-slate-700">Unit Usaha Inkubator Bisnis</span>
+                            </div>
+                            <h3 class="text-base sm:text-lg font-black text-slate-900 tracking-tight">
+                                Didedikasikan Penuh untuk Mahasiswa Politeknik Negeri Bengkalis
+                            </h3>
+                            <p class="text-xs sm:text-[13px] text-slate-500 max-w-2xl leading-relaxed">
+                                Sistem POS dan Kartu Pintar NFC ini dirancang khusus memfasilitasi transaksi seluruh mahasiswa, dosen, serta gerai mitra di lingkungan food area kampus Polbeng.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Official Campus Metrics Pill -->
+                    <div class="flex items-center gap-3 shrink-0 bg-white px-5 py-3 rounded-2xl border border-slate-200 shadow-xs">
+                        <div class="w-9 h-9 rounded-xl bg-brandlime-400 text-slate-900 flex items-center justify-center font-black text-base shrink-0">
+                            🎓
+                        </div>
+                        <div class="text-left font-mono">
+                            <div class="text-[10px] text-slate-400 font-bold uppercase">Basis Pengguna</div>
+                            <div class="text-xs sm:text-sm font-extrabold text-slate-900">Mahasiswa Polbeng</div>
+                        </div>
                     </div>
 
                 </div>
@@ -520,18 +561,18 @@
 
         <!-- ================= FOOTER ================= -->
         <footer class="px-5 sm:px-8 lg:px-12 py-8 bg-white border-t border-slate-100 text-xs text-slate-500">
-            <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
-                <div class="flex items-center gap-2">
-                    <img src="{{ asset('images/logo.png') }}" alt="Logo" class="w-5 h-5 object-contain">
-                    <span class="font-bold text-slate-800">Politeknik Negeri Bengkalis</span>
-                    <span>• Unit Usaha Food Area</span>
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-6 text-center sm:text-left">
+                <div class="flex flex-col sm:flex-row items-center gap-3">
+                    <img src="{{ asset('images/polbeng-header.png') }}" alt="Politeknik Negeri Bengkalis" class="h-8 w-auto object-contain">
+                    <div class="h-4 w-px bg-slate-200 hidden sm:block"></div>
+                    <span class="font-bold text-slate-700">Unit Usaha Inkubator Bisnis Food Area</span>
                 </div>
-                <div class="flex items-center gap-4 text-slate-400">
+                <div class="flex flex-wrap items-center justify-center sm:justify-end gap-3 text-slate-400 text-[11px]">
                     <span>Protokol NFC ISO 14443A</span>
                     <span>•</span>
                     <span>Midtrans Payment Gateway</span>
                     <span>•</span>
-                    <span>&copy; {{ date('Y') }}</span>
+                    <span>&copy; {{ date('Y') }} Polbeng</span>
                 </div>
             </div>
         </footer>
