@@ -2,7 +2,13 @@
 @section('title', 'Login - Kantin Polbeng')
 
 @section('content')
-<div class="flex items-center justify-center min-h-[80vh] px-4 py-8">
+<div class="flex flex-col items-center justify-center min-h-[80vh] px-4 py-8">
+    <div class="w-full max-w-md mb-4 flex justify-start">
+        <a href="{{ url('/') }}" class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-500 hover:text-primary transition">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+            <span>Kembali ke Halaman Utama</span>
+        </a>
+    </div>
     <div class="bg-white p-7 sm:p-9 rounded-3xl shadow-xl shadow-slate-200/60 w-full max-w-md border border-gray-100 transition-all">
         
         <!-- LOGO & BRANDING -->

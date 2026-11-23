@@ -9,7 +9,19 @@ use App\Http\Controllers\LimitController;
 use App\Http\Controllers\TopupController;
 use App\Http\Controllers\MidtransController;
 
-Route::get('/', [AuthController::class, 'showLogin'])->name('login');
+// Landing Page Polbeng Food Area
+Route::get('/', function () {
+    try {
+        $menus = \App\Models\Menu::with('pedagang')->take(6)->get();
+    } catch (\Throwable $e) {
+        $menus = collect();
+    }
+    return view('welcome', compact('menus'));
+})->name('landing');
+
+// Autentikasi Pengguna
+Route::get('/login', [AuthController::class, 'showLogin'])->name('login');
+Route::post('/login', [AuthController::class, 'login']);
 Route::post('/', [AuthController::class, 'login']);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
