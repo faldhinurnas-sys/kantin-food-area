@@ -46,7 +46,7 @@ jobs:
     - name: Run Database Migrations
       env:
         DB_CONNECTION: sqlite
-        DB_DATABASE: database/database.sqlite
+        DB_DATABASE: ${{ github.workspace }}/database/database.sqlite
       run: php artisan migrate --force
 
     - name: Execute Automated Tests (PHPUnit)

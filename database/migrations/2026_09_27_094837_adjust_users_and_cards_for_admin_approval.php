@@ -10,14 +10,18 @@ return new class extends Migration
     public function up(): void
     {
         // Adjust users table
-        DB::statement("ALTER TABLE users MODIFY COLUMN role ENUM('pedagang', 'mahasiswa', 'wali', 'admin') DEFAULT 'mahasiswa'");
+        if (DB::getDriverName() === 'mysql') {
+            DB::statement("ALTER TABLE users MODIFY COLUMN role ENUM('pedagang', 'mahasiswa', 'wali', 'admin') DEFAULT 'mahasiswa'");
+        }
         
         Schema::table('users', function (Blueprint $table) {
             $table->enum('status', ['pending', 'approved', 'rejected', 'inactive'])->default('pending')->after('role');
         });
 
         // Adjust cards table
-        DB::statement("ALTER TABLE cards MODIFY COLUMN status ENUM('pending', 'active', 'inactive') DEFAULT 'pending'");
+        if (DB::getDriverName() === 'mysql') {
+            DB::statement("ALTER TABLE cards MODIFY COLUMN status ENUM('pending', 'active', 'inactive') DEFAULT 'pending'");
+        }
     }
 
     public function down(): void
@@ -26,7 +30,9 @@ return new class extends Migration
             $table->dropColumn('status');
         });
 
-        DB::statement("ALTER TABLE users MODIFY COLUMN role ENUM('pedagang', 'mahasiswa', 'wali') DEFAULT 'mahasiswa'");
-        DB::statement("ALTER TABLE cards MODIFY COLUMN status ENUM('active', 'inactive') DEFAULT 'active'");
+        if (DB::getDriverName() === 'mysql') {
+            DB::statement("ALTER TABLE users MODIFY COLUMN role ENUM('pedagang', 'mahasiswa', 'wali') DEFAULT 'mahasiswa'");
+            DB::statement("ALTER TABLE cards MODIFY COLUMN status ENUM('active', 'inactive') DEFAULT 'active'");
+        }
     }
 };
