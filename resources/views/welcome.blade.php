@@ -69,12 +69,12 @@
                         <img src="{{ asset('images/polbeng-header.png') }}" alt="Logo Politeknik Negeri Bengkalis" class="h-7 sm:h-9 w-auto object-contain">
                     </div>
                     <div class="h-5 w-px bg-slate-200 hidden sm:block"></div>
-                    <div class="flex items-center gap-2">
+                    <div class="flex items-center gap-1.5 sm:gap-2">
                         <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-slate-50 border border-slate-200 p-0.5 flex items-center justify-center shrink-0 shadow-2xs">
-                            <img src="{{ asset('images/logo.png') }}" alt="Logo Food Area" class="w-full h-full object-contain">
+                            <img src="{{ asset('images/logo.png') }}" alt="Logo Polbeng Food Area" class="w-full h-full object-contain">
                         </div>
-                        <span class="font-extrabold text-xs sm:text-sm text-slate-900 tracking-tight">
-                            Food Area
+                        <span class="font-extrabold text-xs sm:text-sm text-slate-900 tracking-tight whitespace-nowrap">
+                            Polbeng Food Area
                         </span>
                     </div>
                 </a>
