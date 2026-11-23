@@ -204,15 +204,6 @@
                             </div>
                         </div>
 
-                        <!-- Floating Speech Bubble Tag -->
-                        <div class="absolute -bottom-2 sm:bottom-4 left-0 sm:left-4 z-20 max-w-[250px] sm:max-w-[280px] bg-white/95 backdrop-blur-md rounded-2xl p-3.5 shadow-xl border border-slate-100 flex items-start gap-2.5">
-                            <div class="w-7 h-7 rounded-full bg-brandblue-100 text-brandblue-600 flex items-center justify-center shrink-0">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-                            </div>
-                            <div class="text-[11px] leading-snug text-slate-800">
-                                <span class="font-extrabold text-slate-900">Jajan Cepat:</span> Tempel kartu mahasiswa di stan kantin, pesanan siap dinikmati.
-                            </div>
-                        </div>
 
                         <!-- Indicator Badge on Top Right -->
                         <div class="absolute -top-3 right-0 sm:right-6 z-20 bg-white rounded-full px-3 py-1.5 shadow-md border border-slate-100 flex items-center gap-2">
