@@ -9,7 +9,7 @@
 
 <p align="center">
   <a href="https://github.com/faldhinurnas-sys/kantin-food-area/actions/workflows/laravel.yml"><img src="https://github.com/faldhinurnas-sys/kantin-food-area/actions/workflows/laravel.yml/badge.svg" alt="Build Status"></a>
-  <img src="https://img.shields.io/badge/Laravel-11.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel 11">
+  <img src="https://img.shields.io/badge/Laravel-12.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel 12">
   <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS">
   <img src="https://img.shields.io/badge/Midtrans-Payment_Gateway-002855?style=for-the-badge" alt="Midtrans Gateway">
   <img src="https://img.shields.io/badge/Hardware-NFC_Contactless-0052CC?style=for-the-badge" alt="NFC Contactless">
@@ -68,7 +68,7 @@ Sistem ini mentransformasi transaksi kantin konvensional menjadi ekosistem *cash
 
 | Komponen | Teknologi |
 | :--- | :--- |
-| **Backend Framework** | [Laravel 11](https://laravel.com/) (PHP 8.2+) |
+| **Backend Framework** | [Laravel 12](https://laravel.com/) (PHP 8.2+) |
 | **Frontend Styling** | [Tailwind CSS](https://tailwindcss.com/) & Modern Blade Templating |
 | **Database** | MySQL / MariaDB (Eloquent ORM) |
 | **Hardware Pembaca** | NFC Card Reader (ACR122U / PN532 / Web NFC API) |

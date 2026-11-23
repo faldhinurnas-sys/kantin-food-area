@@ -11,7 +11,7 @@ Laporan ini mendokumentasikan hasil pengujian riil (*actual execution*) terhadap
 ### 1.1 Profil Lingkungan Pengujian
 * **Nama Sistem**: Polbeng Food Area (Sistem POS & Pembayaran NFC Kantin Kampus)
 * **Institusi**: Politeknik Negeri Bengkalis (Kawasan Rusunawa Polbeng)
-* **Framework Backend**: Laravel 11.x (PHP 8.2.4 & PHP 8.3)
+* **Framework Backend**: Laravel 12.x (PHP 8.2.4 & PHP 8.3)
 * **Frontend**: Tailwind CSS, Alpine.js, Blade Templating
 * **Database Driver**: MySQL (Lokal XAMPP) & SQLite In-Memory (Automated CI Runner)
 * **Test Engine**: PHPUnit 11.5.56 & Laravel Testing Framework
