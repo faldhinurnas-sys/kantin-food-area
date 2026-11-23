@@ -1,0 +1,56 @@
+name: Laravel CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  laravel-tests:
+    name: Build & Test (PHP ${{ matrix.php-versions }})
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        php-versions: ['8.2', '8.3']
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Setup PHP Environment
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: ${{ matrix.php-versions }}
+        extensions: mbstring, xml, ctype, iconv, intl, pdo_sqlite, bcmath, fileinfo, curl
+        coverage: none
+
+    - name: Check Environment File
+      run: php -r "file_exists('.env') || copy('.env.example', '.env');"
+
+    - name: Install Composer Dependencies
+      run: composer install -q --no-ansi --no-interaction --no-scripts --no-progress --prefer-dist
+
+    - name: Generate Application Key
+      run: php artisan key:generate
+
+    - name: Set Directory Permissions
+      run: chmod -R 777 storage bootstrap/cache
+
+    - name: Prepare SQLite Database
+      run: |
+        mkdir -p database
+        touch database/database.sqlite
+
+    - name: Run Database Migrations
+      env:
+        DB_CONNECTION: sqlite
+        DB_DATABASE: database/database.sqlite
+      run: php artisan migrate --force
+
+    - name: Execute Automated Tests (PHPUnit)
+      env:
+        DB_CONNECTION: sqlite
+        DB_DATABASE: ':memory:'
+      run: vendor/bin/phpunit --testdox

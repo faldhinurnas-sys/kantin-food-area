@@ -8,6 +8,7 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/faldhinurnas-sys/kantin-food-area/actions/workflows/laravel.yml"><img src="https://github.com/faldhinurnas-sys/kantin-food-area/actions/workflows/laravel.yml/badge.svg" alt="Build Status"></a>
   <img src="https://img.shields.io/badge/Laravel-11.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel 11">
   <img src="https://img.shields.io/badge/Tailwind_CSS-3.x-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS">
   <img src="https://img.shields.io/badge/Midtrans-Payment_Gateway-002855?style=for-the-badge" alt="Midtrans Gateway">
