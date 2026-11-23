@@ -71,8 +71,13 @@
                     </div>
                     <div class="h-5 w-px bg-slate-200 hidden sm:block"></div>
                     <div class="flex items-center gap-1.5">
-                        <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-brandlime-400 text-slate-900 text-[10px] font-black">
-                            ✓
+                        <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-brandlime-400 text-slate-900 shadow-2xs shrink-0">
+                            <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2v20"/>
+                                <path d="M18 2c-2.2 0-4 1.8-4 4v5a2 2 0 0 0 2 2h2"/>
+                                <path d="M6 2v20"/>
+                                <path d="M3 2v5a3 3 0 0 0 6 0V2"/>
+                            </svg>
                         </span>
                         <span class="font-extrabold text-xs sm:text-sm text-slate-900 tracking-tight">
                             Food Area
