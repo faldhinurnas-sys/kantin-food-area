@@ -9,10 +9,14 @@ use App\Http\Controllers\LimitController;
 use App\Http\Controllers\TopupController;
 use App\Http\Controllers\MidtransController;
 
-// Landing Page Polbeng Food Area
+// Landing Page Polbeng Food Area (Rekomendasi Berdasarkan Terlaris/Produk Terjual)
 Route::get('/', function () {
     try {
-        $menus = \App\Models\Menu::with('pedagang')->take(6)->get();
+        $menus = \App\Models\Menu::with('pedagang')
+            ->withSum('transactionItems', 'quantity')
+            ->orderByDesc('transaction_items_sum_quantity')
+            ->take(6)
+            ->get();
     } catch (\Throwable $e) {
         $menus = collect();
     }

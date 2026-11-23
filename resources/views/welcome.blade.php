@@ -415,21 +415,22 @@
                                         <span class="px-2.5 py-0.5 rounded-full bg-white/90 backdrop-blur-xs text-[10px] font-bold text-slate-800 shadow-2xs">
                                             Tersedia
                                         </span>
-                                        <span class="px-2.5 py-0.5 rounded-full bg-slate-900/80 backdrop-blur-xs text-[10px] font-bold text-white shadow-2xs">
-                                            Favorit
-                                        </span>
+                                        @if(($menu->transaction_items_sum_quantity ?? 0) > 0)
+                                            <span class="px-2.5 py-0.5 rounded-full bg-slate-900/85 backdrop-blur-xs text-[10px] font-bold text-white shadow-2xs">
+                                                Terlaris
+                                            </span>
+                                        @else
+                                            <span class="px-2.5 py-0.5 rounded-full bg-brandblue-600/90 backdrop-blur-xs text-[10px] font-bold text-white shadow-2xs">
+                                                Rekomendasi
+                                            </span>
+                                        @endif
                                     </div>
                                 </div>
 
-                                <!-- Card Title & Rating -->
-                                <h3 class="font-extrabold text-base sm:text-lg text-slate-900 leading-snug mb-1">
+                                <!-- Card Title & Category Tags -->
+                                <h3 class="font-extrabold text-base sm:text-lg text-slate-900 leading-snug mb-2">
                                     {{ $menu->name }}
                                 </h3>
-
-                                <div class="flex items-center gap-1.5 text-xs text-slate-500 mb-3">
-                                    <span class="text-amber-500 font-bold">★ 4.9</span>
-                                    <span>(120+ transaksi di POS)</span>
-                                </div>
 
                                 <!-- Tags / Pills -->
                                 <div class="flex flex-wrap items-center gap-1.5 mb-4 text-[10px] font-bold">
@@ -444,32 +445,40 @@
                                     </span>
                                 </div>
 
-                                <!-- Specs Row: Porsi & Waktu -->
-                                <div class="grid grid-cols-2 gap-2 text-[11px] py-2 border-t border-slate-100 mb-4 text-slate-500 font-mono">
+                                <!-- Specs Row: Rekomendasi Berdasarkan Produk Terjual -->
+                                <div class="grid grid-cols-2 gap-2 text-[11px] py-2.5 border-t border-slate-100 mb-4 text-slate-500 font-mono">
                                     <div>
-                                        <span class="text-slate-400">Porsi:</span>
-                                        <div class="font-bold text-slate-800">1 Orang</div>
+                                        <span class="text-slate-400">Rekomendasi:</span>
+                                        <div class="font-bold text-slate-800 flex items-center gap-1">
+                                            @if(($menu->transaction_items_sum_quantity ?? 0) > 0)
+                                                <span class="text-emerald-600 font-extrabold">🔥 Terlaris</span>
+                                            @else
+                                                <span class="text-slate-700 font-bold">Pilihan Stan</span>
+                                            @endif
+                                        </div>
                                     </div>
                                     <div>
-                                        <span class="text-slate-400">Penyajian:</span>
-                                        <div class="font-bold text-slate-800">5-10 mnt</div>
+                                        <span class="text-slate-400">Total Terjual:</span>
+                                        <div class="font-bold text-slate-900">
+                                            {{ $menu->transaction_items_sum_quantity ?? 0 }} porsi
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Footer: Vendor info + Price + Blue Pill Button -->
+                            <!-- Footer: Tenant Info (Tanpa Harga) + Tombol Pesan POS -->
                             <div class="pt-3 border-t border-slate-100 flex items-center justify-between gap-3">
                                 <div class="min-w-0">
-                                    <div class="text-[11px] text-slate-400 truncate">
-                                        {{ $menu->pedagang->name ?? 'Stan Kantin Polbeng' }}
+                                    <div class="text-[10px] font-bold uppercase tracking-wider text-slate-400">
+                                        Tenant Gerai
                                     </div>
-                                    <div class="text-base sm:text-lg font-black text-slate-900 font-mono">
-                                        Rp {{ number_format($menu->price, 0, ',', '.') }}
+                                    <div class="text-xs sm:text-sm font-extrabold text-slate-800 truncate">
+                                        {{ $menu->pedagang->name ?? 'Stan Kantin Polbeng' }}
                                     </div>
                                 </div>
 
                                 <a href="{{ route('login') }}" class="px-4 py-2 rounded-xl bg-brandblue-600 hover:bg-brandblue-700 text-white font-bold text-xs flex items-center gap-1.5 transition shrink-0 shadow-xs">
-                                    <span>Pesan</span>
+                                    <span>Pesan di POS</span>
                                     <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                                 </a>
                             </div>

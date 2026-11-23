@@ -12,4 +12,9 @@ class Menu extends Model
     {
         return $this->belongsTo(User::class, 'pedagang_id');
     }
+
+    public function transactionItems()
+    {
+        return $this->hasMany(TransactionItem::class, 'menu_id');
+    }
 }
