@@ -190,8 +190,8 @@
                         <!-- Main Photo Card (Tilted with White Border & Shadow) -->
                         <div class="relative z-10 w-[270px] sm:w-[340px] aspect-[4/5] bg-slate-900 rounded-[32px] overflow-hidden shadow-2xl border-[6px] border-white rotate-2 sm:rotate-3 transition hover:rotate-0 duration-300">
                             <img 
-                                src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=700&q=80" 
-                                alt="Mahasiswa di Kantin Polbeng" 
+                                src="{{ asset('images/scan.jpg') }}" 
+                                alt="Aktivitas di Kantin Polbeng Food Area" 
                                 class="w-full h-full object-cover"
                                 loading="eager"
                                 width="340"
