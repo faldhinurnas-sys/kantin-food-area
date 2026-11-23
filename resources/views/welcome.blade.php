@@ -84,8 +84,9 @@
                     <a href="#profil" class="hover:text-brandblue-600 transition">Tentang Kantin</a>
                     <a href="#layanan" class="hover:text-brandblue-600 transition">Keunggulan</a>
                     <a href="#katalog-menu" class="hover:text-brandblue-600 transition">Menu Favorit</a>
-                    <a href="#lokasi" class="hover:text-brandblue-600 transition flex items-center gap-1 text-brandblue-600">
-                        <span>📍 Lokasi &amp; Rute</span>
+                    <a href="#lokasi" class="hover:text-brandblue-600 transition flex items-center gap-1.5 text-brandblue-600">
+                        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        <span>Lokasi &amp; Rute</span>
                     </a>
                 </nav>
 
@@ -113,7 +114,10 @@
                 <a href="#profil" class="block px-3 py-1.5 rounded-lg hover:bg-slate-50">Tentang Kantin</a>
                 <a href="#layanan" class="block px-3 py-1.5 rounded-lg hover:bg-slate-50">Keunggulan</a>
                 <a href="#katalog-menu" class="block px-3 py-1.5 rounded-lg hover:bg-slate-50">Menu Favorit</a>
-                <a href="#lokasi" class="block px-3 py-1.5 rounded-lg hover:bg-slate-50 text-brandblue-600 font-bold">📍 Lokasi &amp; Rute</a>
+                <a href="#lokasi" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg hover:bg-slate-50 text-brandblue-600 font-bold">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                    <span>Lokasi &amp; Rute</span>
+                </a>
                 <a href="{{ route('login') }}" class="block text-center mt-2 px-4 py-2 bg-brandblue-600 text-white rounded-full font-bold text-xs">
                     Masuk ke Akun
                 </a>
@@ -154,8 +158,8 @@
                                 </span>
                             </a>
                             <a href="#lokasi" class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-brandblue-600 hover:text-brandblue-800 transition">
-                                <span>Lihat Petunjuk Rute Lokasi</span>
-                                <span>📍</span>
+                                <svg class="w-4 h-4 text-brandblue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                                <span>Petunjuk Rute Lokasi</span>
                             </a>
                         </div>
 
@@ -202,8 +206,8 @@
 
                         <!-- Floating Speech Bubble Tag -->
                         <div class="absolute -bottom-2 sm:bottom-4 left-0 sm:left-4 z-20 max-w-[250px] sm:max-w-[280px] bg-white/95 backdrop-blur-md rounded-2xl p-3.5 shadow-xl border border-slate-100 flex items-start gap-2.5">
-                            <div class="w-7 h-7 rounded-full bg-brandblue-50 text-brandblue-600 flex items-center justify-center shrink-0 text-sm font-bold">
-                                🍽️
+                            <div class="w-7 h-7 rounded-full bg-brandblue-100 text-brandblue-600 flex items-center justify-center shrink-0">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                             </div>
                             <div class="text-[11px] leading-snug text-slate-800">
                                 <span class="font-extrabold text-slate-900">Jajan Cepat:</span> Tempel kartu mahasiswa di stan kantin, pesanan siap dinikmati.
@@ -249,8 +253,8 @@
 
                     <!-- Location Shortcut Pill -->
                     <a href="#lokasi" class="flex items-center gap-3 shrink-0 bg-white px-5 py-3 rounded-2xl border border-slate-200 shadow-xs hover:border-brandblue-400 transition group">
-                        <div class="w-9 h-9 rounded-xl bg-brandlime-400 text-slate-900 flex items-center justify-center font-black text-base shrink-0 group-hover:scale-110 transition-transform">
-                            📍
+                        <div class="w-9 h-9 rounded-xl bg-brandlime-400 text-slate-900 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                            <svg class="w-5 h-5 text-slate-900" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
                         </div>
                         <div class="text-left font-mono">
                             <div class="text-[10px] text-slate-400 font-bold uppercase">Lokasi Kantin</div>
@@ -295,8 +299,10 @@
                                 </p>
                             </div>
 
-                            <div class="my-4 flex items-center justify-center text-4xl">
-                                🍳
+                            <div class="my-4 flex items-center justify-center">
+                                <div class="w-14 h-14 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center border border-amber-100 shadow-2xs">
+                                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M12 8c-3.866 0-7 1.79-7 4v3a2 2 0 002 2h10a2 2 0 002-2v-3c0-2.21-3.134-4-7-4zM12 5a1.5 1.5 0 100 3 1.5 1.5 0 000-3zM4 19h16"/></svg>
+                                </div>
                             </div>
 
                             <div class="pt-2">
@@ -323,8 +329,10 @@
                                 </p>
                             </div>
 
-                            <div class="my-4 flex items-center justify-center text-4xl">
-                                💳
+                            <div class="my-4 flex items-center justify-center">
+                                <div class="w-14 h-14 rounded-2xl bg-blue-50 text-brandblue-600 flex items-center justify-center border border-blue-100 shadow-2xs">
+                                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3" stroke-width="1.8"/><path stroke-linecap="round" stroke-width="1.8" d="M3 10h18M7 15h3"/></svg>
+                                </div>
                             </div>
 
                             <div class="pt-2">
@@ -351,8 +359,10 @@
                                 </p>
                             </div>
 
-                            <div class="my-4 flex items-center justify-center text-4xl">
-                                🛡️
+                            <div class="my-4 flex items-center justify-center">
+                                <div class="w-14 h-14 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center border border-emerald-100 shadow-2xs">
+                                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                                </div>
                             </div>
 
                             <div class="pt-2">
@@ -379,8 +389,10 @@
                                 </p>
                             </div>
 
-                            <div class="my-4 flex items-center justify-center text-4xl">
-                                🏫
+                            <div class="my-4 flex items-center justify-center">
+                                <div class="w-14 h-14 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center border border-indigo-100 shadow-2xs">
+                                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                                </div>
                             </div>
 
                             <div class="pt-2">
@@ -409,7 +421,8 @@
                     </div>
 
                     <a href="#lokasi" class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-bold text-slate-600 hover:text-brandblue-600 transition">
-                        <span>📍 Langsung ke Kantin</span>
+                        <svg class="w-4 h-4 text-brandblue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        <span>Langsung ke Kantin</span>
                     </a>
                 </div>
 
@@ -429,7 +442,7 @@
                                         >
                                     @else
                                         <div class="w-full h-full flex flex-col items-center justify-center bg-slate-50 p-4 text-center">
-                                            <span class="text-3xl mb-1">🍲</span>
+                                            <svg class="w-10 h-10 text-slate-300 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
                                             <span class="text-[11px] font-mono font-semibold text-slate-400">Polbeng Food Area</span>
                                         </div>
                                     @endif
@@ -471,7 +484,10 @@
                                         <span class="text-slate-400">Status:</span>
                                         <div class="font-bold text-slate-800 flex items-center gap-1">
                                             @if(($menu->transaction_items_sum_quantity ?? 0) > 0)
-                                                <span class="text-emerald-600 font-extrabold">🔥 Terlaris</span>
+                                                <span class="inline-flex items-center gap-1.5 text-emerald-600 font-extrabold">
+                                                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                                                    <span>Terlaris</span>
+                                                </span>
                                             @else
                                                 <span class="text-slate-700 font-bold">Pilihan Stan</span>
                                             @endif
@@ -518,7 +534,7 @@
                     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                         
                         <!-- Left: Info Lokasi & Rute -->
-                        <div class="lg:col-span-7 space-y-5">
+                        <div class="lg:col-span-6 space-y-5">
                             <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brandblue-50 text-brandblue-700 text-xs font-bold border border-brandblue-100">
                                 <span class="w-2 h-2 rounded-full bg-brandblue-600"></span>
                                 Rute &amp; Lokasi Kampus
@@ -535,7 +551,10 @@
                             <!-- Detail Alamat & Jam -->
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
                                 <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
-                                    <div class="text-xs font-mono font-bold text-slate-400 uppercase mb-1">📍 Alamat Lengkap</div>
+                                    <div class="flex items-center gap-1.5 text-xs font-mono font-bold text-slate-400 uppercase mb-1">
+                                        <svg class="w-3.5 h-3.5 text-brandblue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                                        <span>Alamat Lengkap</span>
+                                    </div>
                                     <div class="text-xs sm:text-sm font-bold text-slate-800">
                                         Kawasan Rusunawa Polbeng
                                     </div>
@@ -545,7 +564,10 @@
                                 </div>
 
                                 <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
-                                    <div class="text-xs font-mono font-bold text-slate-400 uppercase mb-1">🕒 Waktu Buka</div>
+                                    <div class="flex items-center gap-1.5 text-xs font-mono font-bold text-slate-400 uppercase mb-1">
+                                        <svg class="w-3.5 h-3.5 text-brandblue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                        <span>Waktu Buka</span>
+                                    </div>
                                     <div class="text-xs sm:text-sm font-bold text-slate-800">
                                         Senin – Sabtu
                                     </div>
@@ -573,35 +595,46 @@
 
                         </div>
 
-                        <!-- Right: Interactive Map Card Visual -->
-                        <div class="lg:col-span-5">
-                            <div class="relative bg-gradient-to-br from-brandblue-50 to-slate-100 rounded-3xl p-6 border border-slate-200 overflow-hidden text-center sm:text-left">
-                                <div class="flex items-center justify-between mb-4">
+                        <!-- Right: Interactive Google Maps Live Preview Embed -->
+                        <div class="lg:col-span-6">
+                            <div class="relative bg-slate-50 rounded-3xl p-3 sm:p-4 border border-slate-200 shadow-sm flex flex-col">
+                                <div class="flex items-center justify-between px-2 py-1.5 mb-2">
                                     <div class="flex items-center gap-2">
-                                        <span class="w-3 h-3 rounded-full bg-rose-500 animate-ping"></span>
-                                        <span class="text-xs font-bold text-slate-800">Tujuan Lokasi</span>
+                                        <span class="w-2.5 h-2.5 rounded-full bg-rose-500 animate-pulse"></span>
+                                        <span class="text-xs font-bold text-slate-800">Peta Lokasi Interaktif</span>
                                     </div>
-                                    <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-white text-slate-600 border border-slate-200">Google Maps</span>
+                                    <a 
+                                        href="https://share.google/jY8dDF9yt6caXMZql" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer" 
+                                        class="text-[11px] font-mono font-semibold text-brandblue-600 hover:text-brandblue-800 flex items-center gap-1 transition"
+                                    >
+                                        <span>Buka di Google Maps</span>
+                                        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                                    </a>
                                 </div>
 
-                                <div class="my-6 py-6 border-y border-slate-200/80 space-y-2">
-                                    <div class="text-4xl sm:text-5xl">📍</div>
-                                    <div class="font-black text-lg sm:text-xl text-slate-900">
-                                        Polbeng Food Area
-                                    </div>
-                                    <p class="text-xs text-slate-500">
-                                        Kawasan Rusunawa Kampus Politeknik Negeri Bengkalis
-                                    </p>
+                                <div class="w-full h-[320px] sm:h-[380px] rounded-2xl overflow-hidden bg-slate-100 border border-slate-200/80 relative shadow-inner">
+                                    <iframe 
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3645.760683421097!2d102.1461493749661!3d1.4591783985270892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d15f03180e072d%3A0x37747ce756d241c!2sRusunawa%20Politeknik%20Negeri%20Bengkalis!5e1!3m2!1sid!2sid!4v1795447426273!5m2!1sid!2sid" 
+                                        width="100%" 
+                                        height="100%" 
+                                        style="border:0;" 
+                                        allowfullscreen="" 
+                                        loading="lazy" 
+                                        referrerpolicy="strict-origin-when-cross-origin"
+                                        title="Peta Lokasi Rusunawa Politeknik Negeri Bengkalis"
+                                        class="w-full h-full"
+                                    ></iframe>
                                 </div>
-
-                                <a 
-                                    href="https://share.google/jY8dDF9yt6caXMZql" 
-                                    target="_blank" 
-                                    rel="noopener noreferrer" 
-                                    class="block w-full py-2.5 px-4 rounded-xl bg-white hover:bg-slate-50 border border-slate-300 text-slate-800 font-bold text-xs text-center transition shadow-2xs"
-                                >
-                                    Klik di Sini untuk Navigasi Rute →
-                                </a>
+                                
+                                <div class="px-2 pt-3 flex items-center justify-between text-[11px] text-slate-500">
+                                    <span class="flex items-center gap-1 font-medium">
+                                        <svg class="w-3.5 h-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                                        Kawasan Rusunawa Kampus Polbeng
+                                    </span>
+                                    <span class="text-slate-400 font-mono text-[10px]">Navigasi &amp; zoom aktif</span>
+                                </div>
                             </div>
                         </div>
 
