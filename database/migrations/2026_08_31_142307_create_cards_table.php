@@ -13,7 +13,7 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
             $table->string('card_uid')->unique();
             $table->decimal('balance', 12, 2)->default(0);
-            $table->enum('status', ['active', 'inactive'])->default('active');
+            $table->enum('status', ['pending', 'active', 'inactive'])->default('pending');
             $table->timestamps();
         });
     }

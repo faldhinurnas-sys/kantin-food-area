@@ -314,7 +314,7 @@ class MidtransController extends Controller
         $serverKey = config('services.midtrans.server_key', env('MIDTRANS_SERVER_KEY'));
         if (!empty($serverKey)) {
             $validSignatureKey = hash("sha512", $notification->order_id . $notification->status_code . $notification->gross_amount . $serverKey);
-            if ($notification->signature_key != $validSignatureKey) {
+            if (!isset($notification->signature_key) || $notification->signature_key != $validSignatureKey) {
                 return response()->json(['message' => 'Invalid signature'], 403);
             }
         }
